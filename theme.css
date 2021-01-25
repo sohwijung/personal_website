@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/HelveticaTh.otf");
+  src: url("./fonts/HelveticaLt.otf");
+}
+
+/*Desktop*/
+html {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  max-width: 65%;
+  margin: auto;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  color: #cccccc;
+  font-weight: lighter;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+.active {
+  color: #363636;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.heading {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.2em;
+  padding: 16px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 26px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #959BA6;
+  font-weight: lighter;
+  padding: 6px;
+}
+
+.intro_main, .intro_about {
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+.intro_main {
+  margin-bottom: 0px;
+}
+
+.intro_about {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.eachproject {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.firstproject {
+  margin-top: 50px;
+}
+
+p {
+  margin: 0px;
+  font-size: 18px;
+  padding: 6px;
+}
+
+.aboutlinks {
+  line-height: 40px;
+}
+
+.abouttext, .aboutlinks {
+  color: #363636;
+  margin-left: 32px;
+  font-size: 20px;
+  padding: 16px;
+}
+
+.projectcomponent {
+  width: 50%;
+  padding: 10px;
+}
+
+.projectcomponent img {
+  width: 100%;
+}
+
+.link {
+  color: #363636;
+  border-color: #363636;
+  border-style: solid;
+  border-width: 1px;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.link:hover {
+  color: white;
+  background-color: #4c4c4c;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  text-align: right;
+}
+
+/* mobile*/
+@media (max-width: 800px){
+  body {
+    max-width: 90%;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .eachproject {
+    flex-direction: column;
+  }
+
+  .projectcomponent{
+    width: 100%;
+    padding: 0px;
+  }
+
+ .sohwijung {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+  }
+
+  .projectcomponent {
+    margin-top: 10px;
+  }
+
+  .eachproject {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .activitylabel {
+    margin-top: 30px;
+  }
+
+  .introduction {
+    margin-top: 0px;
+    padding: 4px;
+  }
+
+  .introduction {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
